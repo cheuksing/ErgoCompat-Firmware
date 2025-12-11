@@ -3,7 +3,7 @@ id: ergocompat
 name: ErgoCompat
 type: shield
 url: https://github.com/cheuksing/ErgoCompat-Firmware
-requires: [waveshare_rp2040_zero]
+requires: [rp2040_zero]
 exposes: []
 features:
   - keys
