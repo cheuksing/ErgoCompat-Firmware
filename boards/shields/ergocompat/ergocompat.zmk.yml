@@ -1,0 +1,11 @@
+file_format: "1"
+id: ergocompat
+name: ErgoCompat
+type: shield
+url: https://github.com/cheuksing/ErgoCompat-Firmware
+requires: [waveshare_rp2040_tiny]
+exposes: []
+features:
+  - keys
+siblings:
+  - ergocompat
