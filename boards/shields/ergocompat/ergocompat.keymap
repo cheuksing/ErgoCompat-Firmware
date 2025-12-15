@@ -10,11 +10,6 @@
 #define FKEY 6
 #define FN 7
 
-&sl {
-    release-after-ms = <2000>;
-    /delete-property/ quick-release;
-};
-
 / {
         keymap {
                 compatible = "zmk,keymap";
@@ -49,15 +44,15 @@
 
                 gaming_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB   |  Q  |  W  |  E  |  R  |              |      |     |     |     |     |
-// |  CAPS  |  A  |  S  |  D  |  F  |              |      |     |     |     |     |
-// |  SHIFT |  Z  |  X  |  C  |  V  |              |      |     |     |     |     |
-// |  CTRL  |  T  |  B  |  G  | SPACE |            | FKEY |     | SLFN|     |     |
+// |  G     |  1  |  2  |  3  |  4  |              |  Y   |  U   |  I  |  O  |  P  |
+// |  TAB   |  Q  |  W  |  E  |  R  |              |  H   |  J   |  K  |  L  |  T  |
+// |  SHIFT |  A  |  S  |  D  |  F  |              |  N   |  M   |     |  V  |  B  |
+// |  CTRL  |  Z  |  X  |  C  | SPACE |            | FKEY |  FN  |     |     |     |
                         bindings = <
-   &kp TAB      &kp Q      &kp W     &kp E     &kp R                   &none       &none     &none          &none     &none
-   &kp CAPS     &kp A      &kp S     &kp D     &kp F                   &none       &none     &none          &none     &none
-   &kp LSHIFT   &kp Z      &kp X     &kp C     &kp V                   &none       &none     &none          &none     &none
-   &kp LCTRL    &kp T      &kp B     &kp G     &kp SPACE               &sl FKEY    &none     &sl FN         &none     &none
+   &kp G        &kp N1     &kp N2    &kp N3    &kp N4                  &kp Y       &kp U     &kp I          &kp O     &kp P
+   &kp TAB      &kp Q      &kp W     &kp E     &kp R                   &kp H       &kp J     &kp K          &kp L     &kp T
+   &kp LSHIFT   &kp A      &kp S     &kp D     &kp F                   &kp N       &kp M     &none          &kp V     &kp B
+   &kp LCTRL    &kp Z      &kp X     &kp C     &kp SPACE               &mo FKEY    &mo FN    &none         &none     &none
                         >;
                 };
 
@@ -66,12 +61,12 @@
 // |  !  |  @  |  #  |  $  |  %  |              |  ^  |  &  |  *  |  (  |  )  |
 // | ~   |  `  |     |     |     |              |  +  |  -  |  |  |  {  |  }  |
 // |     |     |     |     |     |              |  =  |  _  |  \  |  [  |  ]  |
-// |     |     |     |     |     |              | FKEY|     | SLFN|     |     |
+// |     |     |     |     |     |              | FKEY|  FN |     |     |     |
                         bindings = <
    &kp EXCL   &kp AT    &kp HASH  &kp DLLR  &kp PRCNT               &kp CARET   &kp AMPS  &kp STAR      &kp LPAR  &kp RPAR
    &kp TILDE  &kp GRAVE &none     &none     &none                   &kp PLUS    &kp MINUS &kp PIPE      &kp LBRC  &kp RBRC
    &none      &none     &none     &none     &none                   &kp EQUAL   &kp UNDER &kp NUBS      &kp LBKT  &kp RBKT
-   &none      &none     &none     &none     &none                   &sl FKEY    &none     &sl FN        &none     &none
+   &none      &none     &none     &none     &none                   &mo FKEY    &mo FN    &none         &none     &none
                         >;
                 };
 
