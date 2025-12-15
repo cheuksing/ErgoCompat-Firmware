@@ -7,3 +7,5 @@
 #
 board: [ "rp2040_zero" ]
 shield: [ "ergocompat" ]
+snippet: studio-rpc-usb-uart
+cmake-args: -DCONFIG_ZMK_STUDIO=y
