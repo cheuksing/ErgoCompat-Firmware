@@ -1,0 +1,15 @@
+file_format: "1"
+id: arc
+name: Arc
+type: shield
+url: ""
+requires: [e73]
+exposes: [i2c]
+features:
+  - keys
+  - wireless
+siblings:
+  - id: arc_left
+    name: Arc Left
+  - id: arc_right
+    name: Arc Right

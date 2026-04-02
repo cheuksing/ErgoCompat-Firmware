@@ -1,0 +1,6 @@
+#include "arc.dtsi"
+
+&default_transform {
+    col-offset = <5>; 
+    row-offset = <4>;
+};

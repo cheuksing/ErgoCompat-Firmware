@@ -1,0 +1,15 @@
+identifier: e73
+name: Ebyte E73 Module
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - ble
+  - gpio
+  - i2c
+  - spi
+  - uart
+  - usb

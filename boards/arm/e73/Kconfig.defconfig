@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT
+if BOARD_E73
+
+config BOARD
+    default "e73"
+
+config BT_CTLR
+    default BT
+
+endif # BOARD_E73
